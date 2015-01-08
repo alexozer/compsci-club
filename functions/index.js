@@ -20,15 +20,17 @@ function example1() {
 
 	alert("The volume of the cylinder is: " + volume);
 }
+
 /*
  * Example 2: Slightly more advanced
  */
 function example2() {
-	var circumference = prompt("What isthe circumference of the cylinder's base?");
+	var circumference = prompt("What is the circumference of the cylinder's base?");
 	var height = prompt("What is the height of the cylinder?");
 
 	var radius = circumference / Math.PI;
-	volume = cylinderVolume(radius, height);
+	var volume = cylinderVolume(radius, height);
+
 	alert("The volume is: " + volume);
 }
 
