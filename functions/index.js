@@ -28,7 +28,7 @@ function example2() {
 	var circumference = prompt("What is the circumference of the cylinder's base?");
 	var height = prompt("What is the height of the cylinder?");
 
-	var radius = circumference / Math.PI;
+	var radius = circumference / Math.PI / 2;
 	var volume = cylinderVolume(radius, height);
 
 	alert("The volume is: " + volume);
