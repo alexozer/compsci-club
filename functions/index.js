@@ -1,8 +1,9 @@
 "use strict";
 
-example1();
+//example1();
 //example2();
 //example3();
+example4();
 
 function cylinderVolume(radius, height) {
 	return Math.PI * radius * radius * height;
@@ -39,4 +40,32 @@ function example2() {
  */
 function example3() {
 	alert("Volume: " + cylinderVolume(prompt("Radius?"), prompt("Height?")));
+}
+
+/*
+ * Example 4: Prime number checker
+ */
+function isPrime(n) {
+	if(n < 2) {
+		return false;
+	}
+
+	for(var factor = 2; factor < Math.floor(n/2); factor++) {
+		if(n % factor === 0) { // Factor divides evenly into n
+			return false;
+		}
+	}
+
+	// Nothing divided into n, so n must be prime
+	return true;
+}
+
+function example4() {
+	var n = prompt("Enter a number to check if it is prime");
+
+	if(isPrime(n)) {
+		alert(n + " is prime!");
+	} else {
+		alert(n + " is not prime.");
+	}
 }
